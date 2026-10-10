@@ -1,0 +1,567 @@
+/* ==================================
+   RESET
+================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6fa;
+    display:flex;
+    min-height:100vh;
+}
+
+/* ==================================
+   SIDEBAR
+================================== */
+
+.sidebar{
+
+    width:260px;
+    height:100vh;
+    background:#001fccb0;
+    position:fixed;
+    left:0;
+    top:0;
+    color:#fff;
+    overflow-y:auto;
+
+}
+
+.profile{
+
+    text-align:center;
+    padding:30px 20px;
+
+}
+
+.profile img{
+
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#fff;
+    padding:10px;
+
+}
+
+.profile h2{
+
+    margin-top:15px;
+    font-size:28px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+    margin-top:30px;
+
+}
+
+.sidebar ul li{
+
+    margin:8px 0;
+
+}
+
+.sidebar ul li a{
+
+    display:block;
+    padding:16px 25px;
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+    transition:.3s;
+
+}
+
+.sidebar ul li a:hover{
+
+    background:#fff;
+    color:#001fccb0;
+    border-radius:40px 0 0 40px;
+
+}
+
+/* ==================================
+   MAIN
+================================== */
+
+.main{
+
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding-bottom:40px;
+
+}
+
+/* ==================================
+   HEADER
+================================== */
+
+header{
+
+    background:#fff;
+    padding:25px 40px;
+    box-shadow:0 4px 12px rgba(0,0,0,.10);
+
+}
+
+header h1{
+
+    color:#001fccb0;
+    font-size:38px;
+
+}
+
+header p{
+
+    color:#666;
+    font-size:18px;
+    margin-top:8px;
+
+}
+
+/* ==================================
+   DASHBOARD CARDS
+================================== */
+
+.dashboard{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding:40px;
+
+}
+
+.card{
+
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card h3{
+
+    color:#666;
+    margin-bottom:15px;
+    font-size:22px;
+
+}
+
+.card h1{
+
+    color:#001fccb0;
+    font-size:50px;
+
+}
+/* ==================================
+   PATIENT RECORDS
+================================== */
+
+.patient-records{
+
+    margin:40px;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
+    overflow-x:auto;
+
+}
+
+.patient-records h2{
+
+    color:#001fccb0;
+    margin-bottom:25px;
+    font-size:32px;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+table th{
+
+    background:#001fccb0;
+    color:#fff;
+    padding:18px;
+    font-size:18px;
+
+}
+
+table td{
+
+    padding:16px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+
+}
+
+table tr:hover{
+
+    background:#fff3fc;
+
+}
+
+/* ==================================
+   BUTTONS
+================================== */
+
+.edit{
+
+    background:#28a745;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:8px;
+    transition:.3s;
+
+}
+
+.edit:hover{
+
+    background:#218838;
+
+}
+
+.delete{
+
+    background:#dc3545;
+
+    color:#fff;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.delete:hover{
+
+    background:#bb2d3b;
+
+}
+
+/* ===========================================
+RECENT APPOINTMENTS
+=========================================== */
+
+.recent-appointments{
+
+    background:#fff;
+
+    margin:40px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
+
+    overflow-x:auto;
+
+}
+
+.recent-appointments h2{
+
+    color:#001fccb0;
+
+    margin-bottom:20px;
+
+    font-size:30px;
+
+}
+
+.recent-appointments table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.recent-appointments th{
+
+    background:#001fccb0;
+
+    color:#fff;
+
+    padding:15px;
+
+}
+
+.recent-appointments td{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+
+    text-align:center;
+
+}
+
+.recent-appointments tr:hover{
+
+    background:#f8fbff;
+
+}
+/* ===========================================
+CHART SECTION
+=========================================== */
+
+.chart-card{
+
+    background:#fff;
+
+    margin:40px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
+
+}
+
+.chart-card h2{
+
+    color:#001fccb0;
+
+    margin-bottom:25px;
+
+    font-size:30px;
+
+    text-align:center;
+
+}
+
+#appointmentChart{
+
+    width:100% !important;
+
+    max-height:380px;
+
+}
+
+#statusPieChart{
+
+    width:100% !important;
+
+    max-height:380px;
+
+}
+
+/* ===========================================
+MONTHLY REPORT
+=========================================== */
+
+.monthly-report{
+
+    background:#fff;
+
+    margin:40px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
+
+}
+
+.monthly-report h2{
+
+    color:#001fccb0;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+    font-size:30px;
+
+}
+
+.report-cards{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.report-box{
+
+    flex:1;
+
+    min-width:220px;
+
+    background:#f5f9ff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.report-box:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+}
+
+.report-box h3{
+
+    color:#666;
+
+    margin-bottom:15px;
+
+}
+
+.report-box h1{
+
+    color:#001fccb0;
+
+    font-size:42px;
+
+}
+
+/* ===========================================
+RESPONSIVE
+=========================================== */
+
+@media(max-width:1000px){
+
+.dashboard{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.report-cards{
+
+flex-direction:column;
+
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+
+display:block;
+
+}
+
+.sidebar{
+
+width:100%;
+
+height:auto;
+
+position:relative;
+
+}
+
+.main{
+
+margin-left:0;
+
+width:100%;
+
+}
+
+.dashboard{
+
+grid-template-columns:1fr;
+
+padding:20px;
+
+}
+
+.patient-records,
+
+.recent-appointments,
+
+.chart-card,
+
+.monthly-report{
+
+margin:20px;
+
+}
+
+header{
+
+text-align:center;
+
+padding:20px;
+
+}
+
+header h1{
+
+font-size:30px;
+
+}
+
+.card h1{
+
+font-size:38px;
+
+}
+
+table{
+
+font-size:14px;
+
+}
+
+.edit,
+
+.delete{
+
+padding:8px 14px;
+
+font-size:14px;
+
+}
+
+}

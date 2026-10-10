@@ -1,0 +1,527 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f8fb;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    background:#0077cc;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:70px;
+    margin-right:15px;
+}
+
+.logo h2{
+    color:white;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:yellow;
+}
+
+/* ==========================
+   PAGE TITLE
+========================== */
+
+.title{
+    text-align:center;
+    padding:70px 20px;
+    background:white;
+}
+
+.title h1{
+    color:#0077cc;
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.title p{
+    width:70%;
+    margin:auto;
+    color:#555;
+    font-size:22px;
+    line-height:35px;
+}
+
+/* ==========================
+   DEPARTMENTS
+========================== */
+
+.departments{
+    padding:80px 60px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+    background:#f4f8fb;
+}
+
+.department-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+    text-align:center;
+}
+
+.department-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.department-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.department-card h2{
+    color:#0077cc;
+    font-size:30px;
+    margin:20px 0 15px;
+}
+
+.department-card p{
+    color:#666;
+    font-size:18px;
+    line-height:30px;
+    padding:0 20px 20px;
+}
+
+.department-card button{
+    background:#0077cc;
+    color:#fff;
+    border:none;
+    padding:14px 30px;
+    margin-bottom:25px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.department-card button:hover{
+    background:#005fa3;
+    transform:scale(1.05);
+}
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f8fb;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    background:#0077cc;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:70px;
+    margin-right:15px;
+}
+
+.logo h2{
+    color:white;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:yellow;
+}
+
+/* ==========================
+   PAGE TITLE
+========================== */
+
+.title{
+    text-align:center;
+    padding:70px 20px;
+    background:white;
+}
+
+.title h1{
+    color:#0077cc;
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.title p{
+    width:70%;
+    margin:auto;
+    color:#555;
+    font-size:22px;
+    line-height:35px;
+}
+
+/* ==========================
+   DEPARTMENTS
+========================== */
+
+.departments{
+    padding:80px 60px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+    background:#f4f8fb;
+}
+
+.department-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+    text-align:center;
+}
+
+.department-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.department-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.department-card h2{
+    color:#0077cc;
+    font-size:30px;
+    margin:20px 0 15px;
+}
+
+.department-card p{
+    color:#666;
+    font-size:18px;
+    line-height:30px;
+    padding:0 20px 20px;
+}
+
+.department-card button{
+    background:#0077cc;
+    color:#fff;
+    border:none;
+    padding:14px 30px;
+    margin-bottom:25px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.department-card button:hover{
+    background:#005fa3;
+    transform:scale(1.05);
+}
+/* ==========================
+   DEPARTMENT DETAILS
+========================== */
+
+.department-details{
+
+    padding:70px 60px;
+
+    background:#eef6fc;
+
+}
+
+#details-box{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    background:#ffffff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+#details-box h2{
+
+    color:#0077cc;
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+#details-box img{
+
+    width:100%;
+
+    max-width:600px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin:20px auto;
+
+    display:block;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.20);
+
+}
+
+#details-box p{
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:30px;
+
+    margin:20px 0;
+
+}
+
+#details-box ul{
+
+    list-style:none;
+
+    max-width:500px;
+
+    margin:25px auto;
+
+    text-align:left;
+
+}
+
+#details-box ul li{
+
+    font-size:18px;
+
+    color:#333;
+
+    padding:12px 0;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+#details-box ul li:last-child{
+
+    border-bottom:none;
+
+}
+/* ==========================
+   DETAILS RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .department-details{
+
+        padding:50px 30px;
+
+    }
+
+    #details-box{
+
+        padding:30px;
+
+    }
+
+    #details-box h2{
+
+        font-size:32px;
+
+    }
+
+    #details-box img{
+
+        max-width:100%;
+
+        height:300px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .department-details{
+
+        padding:40px 20px;
+
+    }
+
+    #details-box{
+
+        padding:20px;
+
+    }
+
+    #details-box h2{
+
+        font-size:28px;
+
+    }
+
+    #details-box img{
+
+        width:100%;
+
+        height:220px;
+
+    }
+
+    #details-box p{
+
+        font-size:16px;
+
+        line-height:28px;
+
+    }
+
+    #details-box ul li{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ==========================
+   SMOOTH ANIMATION
+========================== */
+
+.department-card,
+#details-box{
+
+    transition:all .4s ease;
+
+}
+
+#details-box{
+
+    animation:fadeIn .5s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

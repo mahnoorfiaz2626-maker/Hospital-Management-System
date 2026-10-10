@@ -1,0 +1,193 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-image:url("../images/background1.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/* ==========================
+   REGISTER CONTAINER
+========================== */
+
+.register-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ==========================
+   REGISTER BOX
+========================== */
+
+.register-box{
+
+    width:450px;
+
+    padding:40px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,0.90);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.30);
+
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.register-box img{
+
+    width:120px;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+   HEADING
+========================== */
+
+.register-box h1{
+
+    color:#0077cc;
+
+    margin-bottom:10px;
+
+    font-size:42px;
+
+}
+
+.register-box p{
+
+    color:#555;
+
+    margin-bottom:25px;
+
+    font-size:18px;
+
+}
+
+/* ==========================
+   INPUT FIELDS
+========================== */
+
+.register-box input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border:1px solid #ccc;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.register-box input:focus{
+
+    border:2px solid #0077cc;
+
+}
+
+/* ==========================
+   REGISTER BUTTON
+========================== */
+
+.register-box button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#0077cc;
+
+    color:white;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.register-box button:hover{
+
+    background:#005fa3;
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================
+   LOGIN LINK
+========================== */
+
+.login-link{
+
+    margin-top:25px;
+
+    color:#666;
+
+    font-size:16px;
+
+}
+
+.login-link a{
+
+    color:#0077cc;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.login-link a:hover{
+
+    text-decoration:underline;
+
+}

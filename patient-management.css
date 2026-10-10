@@ -1,0 +1,463 @@
+/* ======================================
+   RESET
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    padding:30px;
+}
+
+/* ======================================
+   CONTAINER
+====================================== */
+
+.container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.container h1{
+
+    color:#0b74d1;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.container p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+/* ======================================
+   PATIENT FORM
+====================================== */
+
+.patient-form{
+
+    margin-bottom:40px;
+
+}
+
+.patient-form h2{
+
+    color:#0b74d1;
+
+    margin-bottom:20px;
+
+}
+
+#patientForm{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+.form-group input,
+
+.form-group select{
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus{
+
+    border-color:#0b74d1;
+
+}
+
+/* ======================================
+   ADD PATIENT BUTTON
+====================================== */
+
+#addPatientBtn{
+
+    grid-column:1/3;
+
+    background:#0b74d1;
+
+    color:#fff;
+
+    border:none;
+
+    padding:15px;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#addPatientBtn:hover{
+
+    background:#095cad;
+
+}
+/* ======================================
+   SEARCH BOX
+====================================== */
+
+.search-box{
+
+    margin:30px 0;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.search-box input:focus{
+
+    border-color:#0b74d1;
+
+}
+
+/* ======================================
+   TABLE
+====================================== */
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+.table-container h2{
+
+    color:#0b74d1;
+
+    margin-bottom:20px;
+
+}
+
+#patientTable{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#fff;
+
+}
+
+#patientTable th{
+
+    background:#0b74d1;
+
+    color:#fff;
+
+    padding:15px;
+
+    text-align:center;
+
+    font-size:16px;
+
+}
+
+#patientTable td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #eee;
+
+}
+
+#patientTable tr:hover{
+
+    background:#f7fbff;
+
+}
+
+/* ======================================
+   ACTION BUTTONS
+====================================== */
+
+.editBtn{
+
+    background:#28a745;
+
+    color:#fff;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    margin-right:5px;
+
+    transition:.3s;
+
+}
+
+.editBtn:hover{
+
+    background:#218838;
+
+}
+
+.deleteBtn{
+
+    background:#dc3545;
+
+    color:#fff;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.deleteBtn:hover{
+
+    background:#c82333;
+
+}
+
+/* ======================================
+   STATUS COLORS
+====================================== */
+
+.admitted{
+
+    background:#d4edda;
+
+    color:#155724;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+}
+
+.treatment{
+
+    background:#fff3cd;
+
+    color:#856404;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+}
+
+.discharged{
+
+    background:#d1ecf1;
+
+    color:#0c5460;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+}
+/* ======================================
+   RESPONSIVE TABLE
+====================================== */
+
+.table-container{
+
+    width:100%;
+
+    overflow-x:auto;
+
+}
+
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+
+@media(max-width:992px){
+
+#patientForm{
+
+    grid-template-columns:1fr;
+
+}
+
+#addPatientBtn{
+
+    grid-column:1;
+
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+
+    padding:15px;
+
+}
+
+.container{
+
+    padding:20px;
+
+}
+
+.container h1{
+
+    font-size:28px;
+
+}
+
+.container p{
+
+    font-size:15px;
+
+}
+
+#patientTable{
+
+    min-width:1000px;
+
+}
+
+.search-box input{
+
+    font-size:15px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+
+    padding:15px;
+
+}
+
+.container h1{
+
+    font-size:24px;
+
+}
+
+.patient-form h2{
+
+    font-size:20px;
+
+}
+
+#addPatientBtn{
+
+    font-size:16px;
+
+    padding:12px;
+
+}
+
+.form-group input,
+
+.form-group select{
+
+    font-size:14px;
+
+    padding:10px;
+
+}
+
+.search-box input{
+
+    font-size:14px;
+
+    padding:12px;
+
+}
+
+}

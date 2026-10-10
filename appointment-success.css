@@ -1,0 +1,424 @@
+/* ==========================================
+        GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+        RESET
+========================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+body{
+
+    background:#eef5fb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:20px;
+
+}
+
+/* ==========================================
+        SUCCESS CARD
+========================================== */
+
+.success-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.success-card{
+
+    width:100%;
+
+    max-width:520px;
+
+    background:#ffffff;
+
+    border-radius:16px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    animation:fadeIn .5s ease;
+
+}
+
+/* ==========================================
+        ICON
+========================================== */
+
+.icon{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+.icon i{
+
+    font-size:70px;
+
+    color:#16a34a;
+
+}
+
+/* ==========================================
+        TITLE
+========================================== */
+
+.success-card h1{
+
+    text-align:center;
+
+    color:#0b74d1;
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.success-card p{
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================================
+        DETAILS
+========================================== */
+
+.details{
+
+    background:#f8fbff;
+
+    border-radius:10px;
+
+    padding:15px;
+
+}
+
+.row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #e4edf7;
+
+    font-size:14px;
+
+}
+
+.row:last-child{
+
+    border-bottom:none;
+
+}
+
+.status{
+
+    color:#16a34a;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+        BUTTONS
+========================================== */
+
+.buttons{
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.btn{
+
+    flex:1;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    background:#0b74d1;
+
+    color:#fff;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#085ca8;
+
+}
+
+.print-btn{
+
+    background:#16a34a;
+
+}
+
+.print-btn:hover{
+
+    background:#12803c;
+
+}
+
+/* ==========================================
+        ANIMATION
+========================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+        RESPONSIVE
+========================================== */
+
+@media(max-width:600px){
+
+.success-card{
+
+padding:20px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.success-card h1{
+
+font-size:24px;
+
+}
+
+}
+/* ===========================================
+        PRINT SLIP
+=========================================== */
+
+@media print{
+
+body{
+
+    background:#ffffff;
+
+}
+
+.buttons{
+
+    display:none;
+
+}
+
+.icon{
+
+    color:#0b74d1;
+
+}
+
+.success-card{
+
+    width:100%;
+
+    max-width:100%;
+
+    margin:0;
+
+    padding:20px;
+
+    border:2px solid #0b74d1;
+
+    border-radius:10px;
+
+    box-shadow:none;
+
+}
+
+.success-card h1{
+
+    color:#0b74d1;
+
+}
+
+.details{
+
+    margin-top:20px;
+
+}
+
+.row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    border-bottom:1px solid #ddd;
+
+    padding:10px 0;
+
+}
+
+.status{
+
+    color:green;
+
+    font-weight:bold;
+
+}
+
+}
+.print-logo{
+
+width:90px;
+
+display:block;
+
+margin:15px auto;
+
+}
+/* ===========================================
+        HOSPITAL HEADER
+=========================================== */
+
+.hospital-header{
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+.hospital-logo{
+
+width:80px;
+
+margin-bottom:10px;
+
+}
+
+.hospital-header h2{
+
+color:#0b74d1;
+
+margin-bottom:5px;
+
+}
+
+.hospital-header p{
+
+margin:3px 0;
+
+color:#555;
+
+font-size:14px;
+
+}
+
+/* ===========================================
+        SIGNATURE
+=========================================== */
+
+.signature-section{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:40px;
+
+text-align:center;
+
+}
+
+.signature-section div{
+
+width:45%;
+
+}
+
+.print-date{
+
+margin-top:25px;
+
+text-align:center;
+
+font-size:14px;
+
+color:#666;
+
+}

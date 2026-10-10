@@ -1,0 +1,470 @@
+/* ======================================
+   RESET
+====================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+body{
+
+    background:#f4f7fc;
+
+    padding:30px;
+
+}
+
+/* ======================================
+   CONTAINER
+====================================== */
+
+.container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.container h1{
+
+    color:#0b74d1;
+
+    margin-bottom:10px;
+
+    font-size:34px;
+
+}
+
+.container p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+/* ======================================
+   FORM
+====================================== */
+
+.doctor-form{
+
+    margin-bottom:40px;
+
+}
+
+.doctor-form h2{
+
+    color:#0b74d1;
+
+    margin-bottom:20px;
+
+}
+
+#doctorForm{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+.form-group input,
+
+.form-group select{
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus{
+
+    border-color:#0b74d1;
+
+}
+/* ======================================
+   ADD DOCTOR BUTTON
+====================================== */
+
+#addDoctorBtn{
+
+    grid-column:1/3;
+
+    background:#0b74d1;
+
+    color:#fff;
+
+    border:none;
+
+    padding:15px;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#addDoctorBtn:hover{
+
+    background:#095cad;
+
+}
+
+/* ======================================
+   SEARCH BOX
+====================================== */
+
+.search-box{
+
+    margin:30px 0;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.search-box input:focus{
+
+    border-color:#0b74d1;
+
+}
+
+/* ======================================
+   TABLE
+====================================== */
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+.table-container h2{
+
+    color:#0b74d1;
+
+    margin-bottom:20px;
+
+}
+
+#doctorTable{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#fff;
+
+}
+
+#doctorTable th{
+
+    background:#0b74d1;
+
+    color:#fff;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+#doctorTable td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #eee;
+
+}
+
+#doctorTable tr:hover{
+
+    background:#f7fbff;
+
+}
+
+/* ======================================
+   DOCTOR IMAGE
+====================================== */
+
+#doctorTable img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid #0b74d1;
+
+}
+/* ======================================
+   ACTION BUTTONS
+====================================== */
+
+.editBtn,
+.deleteBtn{
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    margin:2px;
+
+    transition:.3s;
+
+}
+
+.editBtn{
+
+    background:#28a745;
+
+    color:#fff;
+
+}
+
+.editBtn:hover{
+
+    background:#218838;
+
+}
+
+.deleteBtn{
+
+    background:#dc3545;
+
+    color:#fff;
+
+}
+
+.deleteBtn:hover{
+
+    background:#c82333;
+
+}
+
+/* ======================================
+   STATUS BADGES
+====================================== */
+
+.available{
+
+    background:#d4edda;
+
+    color:#155724;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+    display:inline-block;
+
+}
+
+.busy{
+
+    background:#f8d7da;
+
+    color:#721c24;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+    display:inline-block;
+
+}
+
+.leave{
+
+    background:#fff3cd;
+
+    color:#856404;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+    display:inline-block;
+
+}
+
+/* ======================================
+   RESPONSIVE TABLE
+====================================== */
+
+.table-container{
+
+    width:100%;
+
+    overflow-x:auto;
+
+}
+
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+
+@media(max-width:992px){
+
+#doctorForm{
+
+    grid-template-columns:1fr;
+
+}
+
+#addDoctorBtn{
+
+    grid-column:1;
+
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+
+    padding:15px;
+
+}
+
+.container{
+
+    padding:20px;
+
+}
+
+.container h1{
+
+    font-size:28px;
+
+}
+
+.container p{
+
+    font-size:15px;
+
+}
+
+#doctorTable{
+
+    min-width:900px;
+
+}
+
+.search-box input{
+
+    font-size:15px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+
+    padding:15px;
+
+}
+
+.container h1{
+
+    font-size:24px;
+
+}
+
+.doctor-form h2{
+
+    font-size:20px;
+
+}
+
+#addDoctorBtn{
+
+    font-size:16px;
+
+}
+
+}
