@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Payroll Management</title>
+
+<link rel="stylesheet"
+href="css/payroll-management.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================================
+HEALTHCARE HOSPITAL
+PAYROLL MANAGEMENT
+PHASE 1 - PART 1
+=========================================== -->
+
+<div class="container">
+
+<h1>
+
+<i class="fa-solid fa-money-check-dollar"></i>
+
+Payroll Management
+
+</h1>
+
+<p>
+
+Manage employee salaries, bonuses, deductions, payroll records and monthly payments efficiently.
+
+</p>
+<!-- ===========================================
+ADD PAYROLL FORM
+PHASE 1 - PART 2
+=========================================== -->
+
+<div class="payroll-form">
+
+    <h2>
+
+        <i class="fa-solid fa-plus-circle"></i>
+
+        Add Payroll Record
+
+    </h2>
+
+    <form id="payrollForm">
+
+        <div class="form-group">
+
+            <label>Employee ID</label>
+
+            <input
+                type="text"
+                id="employeeId"
+                placeholder="Enter Employee ID"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Employee Name</label>
+
+            <input
+                type="text"
+                id="employeeName"
+                placeholder="Enter Employee Name"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Department</label>
+
+            <input
+                type="text"
+                id="department"
+                placeholder="Enter Department"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Designation</label>
+
+            <input
+                type="text"
+                id="designation"
+                placeholder="Enter Designation"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Basic Salary (PKR)</label>
+
+            <input
+                type="number"
+                id="basicSalary"
+                placeholder="Enter Basic Salary"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Bonus (PKR)</label>
+
+            <input
+                type="number"
+                id="bonus"
+                value="0"
+                placeholder="Enter Bonus">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Deductions (PKR)</label>
+
+            <input
+                type="number"
+                id="deductions"
+                value="0"
+                placeholder="Enter Deductions">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Net Salary (PKR)</label>
+
+            <input
+                type="number"
+                id="netSalary"
+                readonly>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Salary Month</label>
+
+            <input
+                type="month"
+                id="salaryMonth"
+                required>
+
+        </div>
+
+        <button
+            type="submit"
+            id="addPayrollBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add Payroll Record
+
+        </button>
+
+    </form>
+
+</div>
+<!-- ===========================================
+SEARCH PAYROLL
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchPayroll"
+        placeholder="🔍 Search Payroll Record">
+
+</div>
+
+<!-- ===========================================
+PAYROLL RECORDS TABLE
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="table-container">
+
+    <h2>
+
+        <i class="fa-solid fa-table"></i>
+
+        Payroll Records
+
+    </h2>
+
+    <table id="payrollTable">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Employee ID</th>
+
+                <th>Employee Name</th>
+
+                <th>Department</th>
+
+                <th>Designation</th>
+
+                <th>Basic Salary</th>
+
+                <th>Bonus</th>
+
+                <th>Deductions</th>
+
+                <th>Net Salary</th>
+
+                <th>Salary Month</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <!-- JavaScript will load payroll records here -->
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- ===========================================
+JAVASCRIPT
+=========================================== -->
+
+</div>
+
+<script src="js/payroll-management.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Room Management</title>
+
+<link rel="stylesheet"
+href="css/room-management.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================================
+HEALTHCARE HOSPITAL
+ROOM MANAGEMENT
+PHASE 1 - PART 1
+=========================================== -->
+
+<div class="container">
+
+<h1>
+
+<i class="fa-solid fa-bed"></i>
+
+Room Management
+
+</h1>
+
+<p>
+
+Manage hospital rooms, wards and bed availability efficiently.
+
+</p>
+<!-- ===========================================
+ADD ROOM FORM
+PHASE 1 - PART 2
+=========================================== -->
+
+<div class="room-form">
+
+    <h2>
+
+        <i class="fa-solid fa-plus-circle"></i>
+
+        Add New Room
+
+    </h2>
+
+    <form id="roomForm">
+
+        <div class="form-group">
+
+            <label>Room Number</label>
+
+            <input
+                type="text"
+                id="roomNumber"
+                placeholder="Enter Room Number"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Room Type</label>
+
+            <select id="roomType" required>
+
+                <option value="">Select Room Type</option>
+
+                <option>General Ward</option>
+
+                <option>Private Room</option>
+
+                <option>ICU</option>
+
+                <option>Emergency</option>
+
+                <option>VIP Room</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Bed Capacity</label>
+
+            <input
+                type="number"
+                id="bedCapacity"
+                placeholder="Enter Bed Capacity"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Availability</label>
+
+            <select id="availability" required>
+
+                <option value="">Select Status</option>
+
+                <option>Available</option>
+
+                <option>Occupied</option>
+
+                <option>Maintenance</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Room Charges (Rs.)</label>
+
+            <input
+                type="number"
+                id="roomCharges"
+                placeholder="Enter Room Charges"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Floor Number</label>
+
+            <input
+                type="number"
+                id="floorNumber"
+                placeholder="Enter Floor Number"
+                required>
+
+        </div>
+
+        <button
+            type="submit"
+            id="addRoomBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add Room
+
+        </button>
+
+    </form>
+
+</div>
+<!-- ===========================================
+SEARCH ROOM
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchRoom"
+        placeholder="🔍 Search Room">
+
+</div>
+
+<!-- ===========================================
+ROOM TABLE
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="table-container">
+
+    <h2>
+
+        <i class="fa-solid fa-table"></i>
+
+        Room List
+
+    </h2>
+
+    <table id="roomTable">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Room No</th>
+
+                <th>Room Type</th>
+
+                <th>Bed Capacity</th>
+
+                <th>Availability</th>
+
+                <th>Room Charges</th>
+
+                <th>Floor</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <!-- JavaScript will load rooms here -->
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- ===========================================
+JAVASCRIPT
+=========================================== -->
+
+</div>
+
+<script src="js/room-management.js"></script>
+
+</body>
+
+</html>

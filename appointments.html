@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Appointments Management | HealthCare Hospital</title>
+
+<link rel="stylesheet" href="css/appointments.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- =====================================
+        SIDEBAR
+===================================== -->
+
+<div class="sidebar">
+
+<div class="profile">
+
+<img src="images/logo.png" alt="Hospital Logo">
+
+<h2>HealthCare</h2>
+
+</div>
+
+<ul>
+
+<li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+<li><a href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors</a></li>
+
+<li><a href="patients.html"><i class="fa-solid fa-bed-pulse"></i> Patients</a></li>
+
+<li><a href="appointments.html" class="active"><i class="fa-solid fa-calendar-check"></i> Appointments</a></li>
+
+<li><a href="departments.html"><i class="fa-solid fa-hospital"></i> Departments</a></li>
+
+<li><a href="medicines.html"><i class="fa-solid fa-capsules"></i> Medicines</a></li>
+
+<li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+
+<li><a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+
+</ul>
+
+</div>
+
+<!-- =====================================
+        MAIN CONTENT
+===================================== -->
+
+<div class="main">
+
+<header>
+
+<h1>Appointments Management</h1>
+
+</header>
+
+<!-- =====================================
+        TOP BAR
+===================================== -->
+
+<div class="top-bar">
+
+<input
+type="text"
+id="searchAppointment"
+placeholder="Search Patient Name...">
+
+<button
+class="add-btn"
+id="openForm">
+
+<i class="fa-solid fa-plus"></i>
+
+Add Appointment
+
+</button>
+
+</div>
+<!-- =====================================
+        FILTERS
+===================================== -->
+
+<div class="filter-box">
+
+<select id="doctorFilter">
+
+<option value="">All Doctors</option>
+
+<option value="Dr. Aleeza">Dr. Aleeza</option>
+
+<option value="Dr. Tehreem">Dr. Tehreem</option>
+
+<option value="Dr. Mahnoor">Dr. Mahnoor</option>
+
+<option value="Dr. Ahmed">Dr. Ahmed</option>
+
+<option value="Dr. Fatima">Dr. Fatima</option>
+
+<option value="Dr. Usman">Dr. Usman</option>
+
+</select>
+
+<select id="departmentFilter">
+
+<option value="">All Departments</option>
+
+<option value="Cardiology">Cardiology</option>
+
+<option value="Neurology">Neurology</option>
+
+<option value="Pediatrics">Pediatrics</option>
+
+<option value="Orthopedics">Orthopedics</option>
+
+<option value="Dental Care">Dental Care</option>
+
+<option value="Ophthalmology">Ophthalmology</option>
+
+</select>
+
+</div>
+<!-- =====================================
+        DASHBOARD STATS
+===================================== -->
+
+<div class="appointment-stats">
+
+<div class="stat-card">
+
+<h3 id="totalAppointments">
+
+0
+
+</h3>
+
+<p>Total</p>
+
+</div>
+
+<div class="stat-card confirmed-card">
+
+<h3 id="confirmedAppointments">
+
+0
+
+</h3>
+
+<p>Confirmed</p>
+
+</div>
+
+<div class="stat-card completed-card">
+
+<h3 id="completedAppointments">
+
+0
+
+</h3>
+
+<p>Completed</p>
+
+</div>
+
+<div class="stat-card cancelled-card">
+
+<h3 id="cancelledAppointments">
+
+0
+
+</h3>
+
+<p>Cancelled</p>
+
+</div>
+
+</div>
+
+<!-- =====================================
+        APPOINTMENT TABLE
+===================================== -->
+
+<div class="table-box">
+
+<h2>Appointment Records</h2>
+
+<table id="appointmentTable">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Patient</th>
+
+<th>Doctor</th>
+
+<th>Department</th>
+
+<th>Date</th>
+
+<th>Time</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>A001</td>
+
+<td>Ali Khan</td>
+
+<td>Dr. Aleeza</td>
+
+<td>Cardiology</td>
+
+<td>20 Jul 2026</td>
+
+<td>10:00 AM</td>
+
+<td><span class="confirmed">Confirmed</span></td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>A002</td>
+
+<td>Sara Ahmed</td>
+
+<td>Dr. Tehreem</td>
+
+<td>Neurology</td>
+
+<td>22 Jul 2026</td>
+
+<td>01:30 PM</td>
+
+<td><span class="pending">Pending</span></td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>A003</td>
+
+<td>Mahnoor Fiaz</td>
+
+<td>Dr. Mahnoor</td>
+
+<td>Pediatrics</td>
+
+<td>25 Jul 2026</td>
+
+<td>09:30 AM</td>
+
+<td><span class="completed">Completed</span></td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- =====================================
+        APPOINTMENT MODAL START
+===================================== -->
+
+<div id="appointmentModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close">&times;</span>
+
+<h2 class="form-title">
+
+Appointment Booking Form
+
+</h2>
+
+<p class="form-subtitle">
+
+Fill all information carefully.
+
+</p>
+
+<div
+id="successMessage"
+class="success-message">
+
+</div>
+
+<form id="appointmentForm">
+    <!-- =====================================
+        PATIENT INFORMATION
+===================================== -->
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label for="patientName">
+
+Patient Full Name
+
+</label>
+
+<input
+type="text"
+id="patientName"
+placeholder="Enter Patient Full Name"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label for="fatherName">
+
+Father Name
+
+</label>
+
+<input
+type="text"
+id="fatherName"
+placeholder="Enter Father Name"
+required>
+
+</div>
+
+</div>
+
+<!-- =====================================
+        GENDER & AGE
+===================================== -->
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label for="patientGender">
+
+Gender
+
+</label>
+
+<select
+id="patientGender"
+required>
+
+<option value="">Select Gender</option>
+
+<option value="Male">
+
+Male
+
+</option>
+
+<option value="Female">
+
+Female
+
+</option>
+
+<option value="Other">
+
+Other
+
+</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label for="patientAge">
+
+Age
+
+</label>
+
+<input
+type="number"
+id="patientAge"
+placeholder="Enter Age"
+min="1"
+max="120"
+required>
+
+</div>
+
+</div>
+
+<!-- =====================================
+        PHONE & EMAIL
+===================================== -->
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label for="patientPhone">
+
+Phone Number
+
+</label>
+
+<input
+type="tel"
+id="patientPhone"
+placeholder="03XXXXXXXXX"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label for="patientEmail">
+
+Email Address
+
+</label>
+
+<input
+type="email"
+id="patientEmail"
+placeholder="example@gmail.com">
+
+</div>
+
+</div>
+
+<!-- =====================================
+        ADDRESS
+===================================== -->
+
+<div class="form-group">
+
+<label for="address">
+
+Home Address
+
+</label>
+
+<textarea
+id="address"
+placeholder="Enter Complete Address"
+rows="3"
+required>
+
+</textarea>
+
+</div>
+
+<!-- =====================================
+        EMERGENCY CONTACT
+===================================== -->
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label for="emergencyName">
+
+Emergency Contact Name
+
+</label>
+
+<input
+type="text"
+id="emergencyName"
+placeholder="Emergency Contact Person">
+
+</div>
+
+<div class="form-group">
+
+<label for="emergencyPhone">
+
+Emergency Contact Number
+
+</label>
+
+<input
+type="tel"
+id="emergencyPhone"
+placeholder="03XXXXXXXXX">
+
+</div>
+
+</div>
+
+<!-- =====================================
+        BLOOD GROUP
+===================================== -->
+
+<div class="form-group">
+
+<label for="bloodGroup">
+
+Blood Group
+
+</label>
+
+<select id="bloodGroup">
+
+<option value="">Select Blood Group</option>
+
+<option>A+</option>
+
+<option>A-</option>
+
+<option>B+</option>
+
+<option>B-</option>
+
+<option>AB+</option>
+
+<option>AB-</option>
+
+<option>O+</option>
+
+<option>O-</option>
+
+</select>
+
+</div>
+<!-- =====================================
+        DEPARTMENT & DOCTOR
+===================================== -->
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label for="department">
+
+Department
+
+</label>
+
+<select id="department" required>
+
+<option value="">Select Department</option>
+
+<option value="Cardiology">Cardiology</option>
+
+<option value="Neurology">Neurology</option>
+
+<option value="Pediatrics">Pediatrics</option>
+
+<option value="Orthopedics">Orthopedics</option>
+
+<option value="Dental Care">Dental Care</option>
+
+<option value="Ophthalmology">Ophthalmology</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label for="doctor">
+
+Doctor
+
+</label>
+
+<select id="doctor" required>
+
+<option value="">Select Doctor</option>
+
+<option value="Dr. Aleeza">Dr. Aleeza</option>
+
+<option value="Dr. Tehreem">Dr. Tehreem</option>
+
+<option value="Dr. Mahnoor">Dr. Mahnoor</option>
+
+<option value="Dr. Ahmed">Dr. Ahmed</option>
+
+<option value="Dr. Fatima">Dr. Fatima</option>
+
+<option value="Dr. Usman">Dr. Usman</option>
+
+</select>
+
+</div>
+
+</div>
+
+<!-- =====================================
+        APPOINTMENT DATE & TIME
+===================================== -->
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label for="appointmentDate">
+
+Appointment Date
+
+</label>
+
+<input
+type="date"
+id="appointmentDate"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label for="appointmentTime">
+
+Appointment Time
+
+</label>
+
+<input
+type="time"
+id="appointmentTime"
+required>
+
+</div>
+
+</div>
+
+<!-- =====================================
+        PROBLEM / SYMPTOMS
+===================================== -->
+
+<div class="form-group">
+
+<label for="symptoms">
+
+Problem / Symptoms
+
+</label>
+
+<textarea
+id="symptoms"
+rows="4"
+placeholder="Describe your problem..."
+required></textarea>
+
+</div>
+
+<!-- =====================================
+        ADDITIONAL MESSAGE
+===================================== -->
+
+<div class="form-group">
+
+<label for="message">
+
+Additional Message
+
+</label>
+
+<textarea
+id="message"
+rows="3"
+placeholder="Any additional notes..."></textarea>
+
+</div>
+
+<!-- =====================================
+        CONSULTATION SUMMARY
+===================================== -->
+
+<div class="appointment-summary">
+
+<div class="summary-row">
+
+<span>Consultation Fee</span>
+
+<strong>Rs. 2,000</strong>
+
+</div>
+
+<div class="summary-row">
+
+<span>Hospital Charges</span>
+
+<strong>Free</strong>
+
+</div>
+
+<div class="summary-row total">
+
+<span>Total Payable</span>
+
+<strong>Rs. 2,000</strong>
+
+</div>
+
+</div>
+
+<!-- =====================================
+        TERMS & CONDITIONS
+===================================== -->
+
+<div class="checkbox-group">
+
+<label>
+
+<input
+type="checkbox"
+id="terms"
+required>
+
+I agree to the Hospital Terms & Conditions.
+
+</label>
+
+</div>
+<!-- =====================================
+        FORM BUTTONS
+===================================== -->
+
+<div class="form-buttons">
+
+<button
+type="submit"
+class="appointment-btn"
+id="confirmAppointment">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Confirm Appointment
+
+</button>
+
+<button
+type="reset"
+class="reset-btn"
+id="resetForm">
+
+<i class="fa-solid fa-rotate-right"></i>
+
+Reset Form
+
+</button>
+
+</div>
+<button
+class="export-btn"
+id="exportCSV">
+
+<i class="fa-solid fa-file-csv"></i>
+
+Export CSV
+
+</button>
+<button
+class="pdf-btn"
+id="exportPDF">
+
+<i class="fa-solid fa-file-pdf"></i>
+
+Export PDF
+
+</button>
+<!-- =====================================
+        SUCCESS MESSAGE
+===================================== -->
+
+<div
+id="successMessage"
+class="success-message">
+
+Appointment Booked Successfully!
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- =====================================
+        JAVASCRIPT
+===================================== -->
+
+<script src="js/appointments.js"></script>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+</body>
+
+</html>

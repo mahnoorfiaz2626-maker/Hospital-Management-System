@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Laboratory Test Management</title>
+
+<link rel="stylesheet"
+href="css/laboratory-management.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================================
+HEALTHCARE HOSPITAL
+LABORATORY TEST MANAGEMENT
+PHASE 1 - PART 1
+=========================================== -->
+
+<div class="container">
+
+<h1>
+
+<i class="fa-solid fa-flask-vial"></i>
+
+Laboratory Test Management
+
+</h1>
+
+<p>
+
+Manage laboratory tests, reports and patient test records.
+
+</p>
+<!-- ===========================================
+ADD LABORATORY TEST FORM
+PHASE 1 - PART 2
+=========================================== -->
+
+<div class="laboratory-form">
+
+    <h2>
+
+        <i class="fa-solid fa-plus-circle"></i>
+
+        Add Laboratory Test
+
+    </h2>
+
+    <form id="laboratoryForm">
+
+        <div class="form-group">
+
+            <label>Patient Name</label>
+
+            <input
+                type="text"
+                id="patientName"
+                placeholder="Enter Patient Name"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Doctor Name</label>
+
+            <input
+                type="text"
+                id="doctorName"
+                placeholder="Enter Doctor Name"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Test Name</label>
+
+            <select id="testName" required>
+
+                <option value="">Select Test</option>
+
+                <option>Blood Test</option>
+
+                <option>Urine Test</option>
+
+                <option>X-Ray</option>
+
+                <option>CT Scan</option>
+
+                <option>MRI Scan</option>
+
+                <option>ECG</option>
+
+                <option>Ultrasound</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Test Date</label>
+
+            <input
+                type="date"
+                id="testDate"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Test Result</label>
+
+            <input
+                type="text"
+                id="testResult"
+                placeholder="Enter Test Result"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Status</label>
+
+            <select id="status" required>
+
+                <option value="">Select Status</option>
+
+                <option>Pending</option>
+
+                <option>Completed</option>
+
+            </select>
+
+        </div>
+
+        <button
+            type="submit"
+            id="addTestBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add Test
+
+        </button>
+
+    </form>
+
+</div>
+<!-- ===========================================
+SEARCH LABORATORY TEST
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchLaboratory"
+        placeholder="🔍 Search Laboratory Test">
+
+</div>
+
+<!-- ===========================================
+LABORATORY TEST TABLE
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="table-container">
+
+    <h2>
+
+        <i class="fa-solid fa-table"></i>
+
+        Laboratory Test List
+
+    </h2>
+
+    <table id="laboratoryTable">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Patient Name</th>
+
+                <th>Doctor Name</th>
+
+                <th>Test Name</th>
+
+                <th>Test Date</th>
+
+                <th>Test Result</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <!-- JavaScript will load tests here -->
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- ===========================================
+JAVASCRIPT
+=========================================== -->
+
+</div>
+
+<script src="js/laboratory-management.js"></script>
+
+</body>
+
+</html>

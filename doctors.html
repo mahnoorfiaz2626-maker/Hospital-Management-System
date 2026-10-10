@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Doctors | HealthCare Hospital</title>
+
+<link rel="stylesheet" href="css/doctors.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===================================
+        DOCTORS SECTION
+=================================== -->
+
+<section class="doctors-section">
+
+<div class="container">
+
+<h1 class="section-title">
+
+👨‍⚕️ Meet Our Specialist Doctors
+
+</h1>
+
+<p class="section-subtitle">
+
+Choose your doctor and book your appointment online.
+
+</p>
+
+<!-- ===============================
+        SEARCH BAR
+================================ -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchDoctor"
+placeholder="🔍 Search Doctor or Department">
+
+</div>
+
+<!-- ===============================
+        FILTER BUTTONS
+================================ -->
+
+<div class="filter-box">
+
+<button
+class="filter-btn active"
+data-filter="all">
+
+All
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="cardiology">
+
+❤️ Cardiology
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="neurology">
+
+🧠 Neurology
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="pediatrics">
+
+👶 Pediatrics
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="orthopedic">
+
+🦴 Orthopedic
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="dental">
+
+🦷 Dental
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="ophthalmology">
+
+👁 Eye
+
+</button>
+
+</div>
+
+<!-- ===============================
+        DOCTOR GRID
+================================ -->
+
+<div class="doctor-container">
+    <!-- ===================================
+        DOCTOR 1
+=================================== -->
+
+<div class="doctor-card" data-department="cardiology">
+
+    <img src="images/doctor3.jpg" alt="Dr. Aleeza">
+
+    <h3>Dr. Aleeza</h3>
+
+    <p class="speciality">
+        ❤️ Cardiologist
+    </p>
+
+    <p class="experience">
+        10+ Years Experience
+    </p>
+
+    <p class="rating">
+        ⭐⭐⭐⭐⭐ (4.9)
+    </p>
+
+    <p class="status available">
+        🟢 Available Today
+    </p>
+
+    <p class="schedule">
+        🗓 Monday - Saturday
+        <br>
+        🕘 09:00 AM - 03:00 PM
+    </p>
+
+    <div class="doctor-info">
+
+        <p class="phone">
+            📞 0300-1234567
+        </p>
+
+        <p class="email">
+            📧 aleeza@hospital.com
+        </p>
+
+    </div>
+
+    <div class="doctor-buttons">
+
+        <button class="view-btn">
+            View Profile
+        </button>
+
+        <button
+            class="book-btn"
+            data-doctor="Dr. Aleeza">
+
+            Book Appointment
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ===================================
+        DOCTOR 2
+=================================== -->
+
+<div class="doctor-card" data-department="neurology">
+
+    <img src="images/doctor4.jpg" alt="Dr. Tehreem">
+
+    <h3>Dr. Tehreem</h3>
+
+    <p class="speciality">
+        🧠 Neurologist
+    </p>
+
+    <p class="experience">
+        12+ Years Experience
+    </p>
+
+    <p class="rating">
+        ⭐⭐⭐⭐☆ (4.8)
+    </p>
+
+    <p class="status busy">
+        🔴 Busy
+    </p>
+
+    <p class="schedule">
+        🗓 Monday - Friday
+        <br>
+        🕙 10:00 AM - 05:00 PM
+    </p>
+
+    <div class="doctor-info">
+
+        <p class="phone">
+            📞 0311-9876543
+        </p>
+
+        <p class="email">
+            📧 tehreem@hospital.com
+        </p>
+
+    </div>
+
+    <div class="doctor-buttons">
+
+        <button class="view-btn">
+            View Profile
+        </button>
+
+        <button
+            class="book-btn"
+            data-doctor="Dr. Tehreem">
+
+            Book Appointment
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ===================================
+        DOCTOR 3
+=================================== -->
+
+<div class="doctor-card" data-department="pediatrics">
+
+    <img src="images/doctor2.jpg" alt="Dr. Mahnoor">
+
+    <h3>Dr. Mahnoor</h3>
+
+    <p class="speciality">
+        👶 Pediatrician
+    </p>
+
+    <p class="experience">
+        8+ Years Experience
+    </p>
+
+    <p class="rating">
+        ⭐⭐⭐⭐⭐ (5.0)
+    </p>
+
+    <p class="status available">
+        🟢 Available Today
+    </p>
+
+    <p class="schedule">
+        🗓 Monday - Saturday
+        <br>
+        🕗 08:00 AM - 02:00 PM
+    </p>
+
+    <div class="doctor-info">
+
+        <p class="phone">
+            📞 0321-4567890
+        </p>
+
+        <p class="email">
+            📧 mahnoor@hospital.com
+        </p>
+
+    </div>
+
+    <div class="doctor-buttons">
+
+        <button class="view-btn">
+            View Profile
+        </button>
+
+        <button
+            class="book-btn"
+            data-doctor="Dr. Mahnoor">
+
+            Book Appointment
+
+        </button>
+
+    </div>
+
+</div>
+<!-- ===================================
+        DOCTOR 4
+=================================== -->
+
+<div class="doctor-card" data-department="orthopedic">
+
+    <img src="images/doctor1.jpg" alt="Dr. Ahmed">
+
+    <h3>Dr. Ahmed</h3>
+
+    <p class="speciality">
+        🦴 Orthopedic Surgeon
+    </p>
+
+    <p class="experience">
+        15+ Years Experience
+    </p>
+
+    <p class="rating">
+        ⭐⭐⭐⭐⭐ (4.9)
+    </p>
+
+    <p class="status available">
+        🟢 Available Today
+    </p>
+
+    <p class="schedule">
+        🗓 Monday - Friday
+        <br>
+        🕘 09:00 AM - 04:00 PM
+    </p>
+
+    <div class="doctor-info">
+
+        <p class="phone">
+            📞 0333-1122334
+        </p>
+
+        <p class="email">
+            📧 ahmed@hospital.com
+        </p>
+
+    </div>
+
+    <div class="doctor-buttons">
+
+        <button class="view-btn">
+            View Profile
+        </button>
+
+        <button
+            class="book-btn"
+            data-doctor="Dr. Ahmed">
+
+            Book Appointment
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ===================================
+        DOCTOR 5
+=================================== -->
+
+<div class="doctor-card" data-department="dental">
+
+    <img src="images/doctor6.jpg" alt="Dr. Fatima">
+
+    <h3>Dr. Fatima</h3>
+
+    <p class="speciality">
+        🦷 Dental Surgeon
+    </p>
+
+    <p class="experience">
+        9+ Years Experience
+    </p>
+
+    <p class="rating">
+        ⭐⭐⭐⭐☆ (4.8)
+    </p>
+
+    <p class="status leave">
+        🟡 On Leave
+    </p>
+
+    <p class="schedule">
+        🗓 Monday - Saturday
+        <br>
+        🕙 10:00 AM - 02:00 PM
+    </p>
+
+    <div class="doctor-info">
+
+        <p class="phone">
+            📞 0345-7788990
+        </p>
+
+        <p class="email">
+            📧 fatima@hospital.com
+        </p>
+
+    </div>
+
+    <div class="doctor-buttons">
+
+        <button class="view-btn">
+            View Profile
+        </button>
+
+        <button
+            class="book-btn"
+            data-doctor="Dr. Fatima">
+
+            Book Appointment
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ===================================
+        DOCTOR 6
+=================================== -->
+
+<div class="doctor-card" data-department="ophthalmology">
+
+    <img src="images/doctor5.jpg" alt="Dr. Usman">
+
+    <h3>Dr. Usman</h3>
+
+    <p class="speciality">
+        👁 Ophthalmologist
+    </p>
+
+    <p class="experience">
+        11+ Years Experience
+    </p>
+
+    <p class="rating">
+        ⭐⭐⭐⭐⭐ (5.0)
+    </p>
+
+    <p class="status available">
+        🟢 Available Today
+    </p>
+
+    <p class="schedule">
+        🗓 Monday - Friday
+        <br>
+        🕚 11:00 AM - 06:00 PM
+    </p>
+
+    <div class="doctor-info">
+
+        <p class="phone">
+            📞 0305-4455667
+        </p>
+
+        <p class="email">
+            📧 usman@hospital.com
+        </p>
+
+    </div>
+
+    <div class="doctor-buttons">
+
+        <button class="view-btn">
+            View Profile
+        </button>
+
+        <button
+            class="book-btn"
+            data-doctor="Dr. Usman">
+
+            Book Appointment
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+      END OF DOCTOR GRID
+=========================== -->
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================================
+        DOCTOR PROFILE POPUP
+========================================== -->
+
+<div id="doctorModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <img
+            id="modalImage"
+            src="images/doctor1.jpg"
+            alt="Doctor">
+
+        <h2 id="modalName">
+
+            Doctor Name
+
+        </h2>
+
+        <p
+            id="modalSpeciality"
+            class="speciality">
+
+            Specialist
+
+        </p>
+
+        <p id="modalExperience">
+
+            Experience
+
+        </p>
+
+        <p id="modalRating">
+
+            ⭐⭐⭐⭐⭐
+
+        </p>
+
+        <p id="modalStatus">
+
+            🟢 Available
+
+        </p>
+
+        <p id="modalSchedule">
+
+            Monday - Saturday | 09:00 AM - 04:00 PM
+
+        </p>
+
+        <p id="modalPhone">
+
+            📞 03XX-XXXXXXX
+
+        </p>
+
+        <p id="modalEmail">
+
+            📧 doctor@hospital.com
+
+        </p>
+
+        <div class="fee-box">
+
+            <p>Consultation Fee</p>
+
+            <h3 id="modalFee">
+
+                Rs. 3000
+
+            </h3>
+
+        </div>
+
+        <div class="doctor-description">
+
+            <h3>About Doctor</h3>
+
+            <p id="modalDescription">
+
+                This specialist has extensive experience in diagnosing
+                and treating patients using modern medical techniques.
+                Dedicated to providing high-quality healthcare with
+                compassion and professionalism.
+
+            </p>
+
+        </div>
+
+        <button
+            id="popupBookBtn"
+            class="book-btn">
+
+            📅 Book Appointment
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+        FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 HealthCare Hospital Management System
+
+    </p>
+
+</footer>
+
+<!-- ==========================================
+        JAVASCRIPT
+========================================== -->
+
+<script src="js/doctors.js"></script>
+
+</body>
+
+</html>

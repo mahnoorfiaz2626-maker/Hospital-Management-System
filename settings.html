@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings</title>
+
+    <link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+        SIDEBAR
+========================= -->
+
+<div class="sidebar">
+
+    <div class="profile">
+
+        <img src="images/logo.png" alt="Logo">
+
+        <h2>HealthCare</h2>
+
+    </div>
+
+    <ul>
+
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+        <li><a href="doctors.html">👩‍⚕️ Doctors</a></li>
+
+        <li><a href="patients.html">🧑 Patients</a></li>
+
+        <li><a href="appointments.html">📅 Appointments</a></li>
+
+        <li><a href="departments.html">🏥 Departments</a></li>
+
+        <li><a href="medicines.html">💊 Medicines</a></li>
+
+        <li><a href="settings.html" class="active">⚙ Settings</a></li>
+
+        <li><a href="login.html">🚪 Logout</a></li>
+
+    </ul>
+
+</div>
+
+<!-- =========================
+        MAIN CONTENT
+========================= -->
+
+<div class="main">
+
+    <header>
+
+        <h1>Account Settings</h1>
+
+    </header>
+
+    <div class="settings-box">
+
+        <img src="images/profile.png" alt="Profile">
+
+        <h2>Administrator Profile</h2>
+
+        <form id="settingsForm">
+
+            <label>Full Name</label>
+
+            <input type="text" id="fullname" value="Mahnoor Fiaz" required>
+
+            <label>Email Address</label>
+
+            <input type="email" id="email" value="mahnoor@gmail.com" required>
+
+            <label>Phone Number</label>
+
+            <input type="text" id="phone" value="+92 300 1234567" required>
+
+            <label>New Password</label>
+
+            <input type="password" id="password" placeholder="Enter New Password">
+
+            <label>Confirm Password</label>
+
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+            <button type="submit">Save Changes</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- =========================
+        JAVASCRIPT
+========================= -->
+
+<script src="js/settings.js"></script>
+
+</body>
+
+</html>

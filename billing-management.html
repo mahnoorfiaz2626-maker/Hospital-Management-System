@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Billing Management</title>
+
+<link rel="stylesheet"
+href="css/billing-management.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================================
+HEALTHCARE HOSPITAL
+BILLING MANAGEMENT
+PHASE 1 - PART 1
+=========================================== -->
+
+<div class="container">
+
+<h1>
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+Billing Management
+
+</h1>
+
+<p>
+
+Generate and manage patient bills easily.
+
+</p>
+<!-- ===========================================
+ADD BILL FORM
+PHASE 1 - PART 2
+=========================================== -->
+
+<div class="billing-form">
+
+    <h2>
+
+        <i class="fa-solid fa-plus-circle"></i>
+
+        Generate Patient Bill
+
+    </h2>
+
+    <form id="billingForm">
+
+        <div class="form-group">
+
+            <label>Patient Name</label>
+
+            <input
+                type="text"
+                id="patientName"
+                placeholder="Enter Patient Name"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Doctor Name</label>
+
+            <input
+                type="text"
+                id="doctorName"
+                placeholder="Enter Doctor Name"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Medicine Charges (Rs.)</label>
+
+            <input
+                type="number"
+                id="medicineCharges"
+                placeholder="0"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Room Charges (Rs.)</label>
+
+            <input
+                type="number"
+                id="roomCharges"
+                placeholder="0"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Test Charges (Rs.)</label>
+
+            <input
+                type="number"
+                id="testCharges"
+                placeholder="0"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Doctor Fee (Rs.)</label>
+
+            <input
+                type="number"
+                id="doctorFee"
+                placeholder="0"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Total Bill (Rs.)</label>
+
+            <input
+                type="number"
+                id="totalBill"
+                readonly
+                placeholder="Auto Calculated">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Payment Status</label>
+
+            <select id="paymentStatus" required>
+
+                <option value="">Select Status</option>
+
+                <option>Paid</option>
+
+                <option>Unpaid</option>
+
+            </select>
+
+        </div>
+
+        <button
+            type="submit"
+            id="addBillBtn">
+
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+
+            Generate Bill
+
+        </button>
+
+    </form>
+
+</div>
+<!-- ===========================================
+SEARCH BILL
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchBill"
+        placeholder="🔍 Search Bill">
+
+</div>
+
+<!-- ===========================================
+BILL TABLE
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="table-container">
+
+    <h2>
+
+        <i class="fa-solid fa-table"></i>
+
+        Billing List
+
+    </h2>
+
+    <table id="billingTable">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Patient</th>
+
+                <th>Doctor</th>
+
+                <th>Medicine</th>
+
+                <th>Room</th>
+
+                <th>Tests</th>
+
+                <th>Doctor Fee</th>
+
+                <th>Total Bill</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <!-- JavaScript will load bills here -->
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- ===========================================
+JAVASCRIPT
+=========================================== -->
+
+</div>
+
+<script src="js/billing-management.js"></script>
+
+</body>
+
+</html>

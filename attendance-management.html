@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Attendance Management</title>
+
+<link rel="stylesheet"
+href="css/attendance-management.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================================
+HEALTHCARE HOSPITAL
+ATTENDANCE MANAGEMENT
+PHASE 1 - PART 1
+=========================================== -->
+
+<div class="container">
+
+<h1>
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Attendance Management
+
+</h1>
+
+<p>
+
+Manage employee attendance, check-in/check-out times and attendance records efficiently.
+
+</p>
+<!-- ===========================================
+ADD ATTENDANCE FORM
+PHASE 1 - PART 2
+=========================================== -->
+
+<div class="attendance-form">
+
+    <h2>
+
+        <i class="fa-solid fa-plus-circle"></i>
+
+        Mark Employee Attendance
+
+    </h2>
+
+    <form id="attendanceForm">
+
+        <div class="form-group">
+
+            <label>Employee ID</label>
+
+            <input
+                type="text"
+                id="employeeId"
+                placeholder="Enter Employee ID"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Employee Name</label>
+
+            <input
+                type="text"
+                id="employeeName"
+                placeholder="Enter Employee Name"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Department</label>
+
+            <select id="department" required>
+
+                <option value="">Select Department</option>
+
+                <option>Administration</option>
+
+                <option>Accounts</option>
+
+                <option>Emergency</option>
+
+                <option>Pharmacy</option>
+
+                <option>Laboratory</option>
+
+                <option>ICU</option>
+
+                <option>IT</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Date</label>
+
+            <input
+                type="date"
+                id="attendanceDate"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Check-In Time</label>
+
+            <input
+                type="time"
+                id="checkIn"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Check-Out Time</label>
+
+            <input
+                type="time"
+                id="checkOut"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Attendance Status</label>
+
+            <select id="attendanceStatus" required>
+
+                <option value="">Select Status</option>
+
+                <option>Present</option>
+
+                <option>Absent</option>
+
+                <option>Leave</option>
+
+            </select>
+
+        </div>
+
+        <button
+            type="submit"
+            id="addAttendanceBtn">
+
+            <i class="fa-solid fa-check"></i>
+
+            Mark Attendance
+
+        </button>
+
+    </form>
+
+</div>
+<!-- ===========================================
+SEARCH ATTENDANCE
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchAttendance"
+        placeholder="🔍 Search Attendance">
+
+</div>
+
+<!-- ===========================================
+ATTENDANCE TABLE
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="table-container">
+
+    <h2>
+
+        <i class="fa-solid fa-table"></i>
+
+        Attendance Records
+
+    </h2>
+
+    <table id="attendanceTable">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Employee ID</th>
+
+                <th>Employee Name</th>
+
+                <th>Department</th>
+
+                <th>Date</th>
+
+                <th>Check-In</th>
+
+                <th>Check-Out</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <!-- JavaScript will load attendance records here -->
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- ===========================================
+JAVASCRIPT
+=========================================== -->
+
+</div>
+
+<script src="js/attendance-management.js"></script>
+
+</body>
+
+</html>

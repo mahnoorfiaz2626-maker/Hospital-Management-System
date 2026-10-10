@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Ambulance Management</title>
+
+<link rel="stylesheet"
+href="css/ambulance-management.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================================
+HEALTHCARE HOSPITAL
+AMBULANCE MANAGEMENT
+PHASE 1 - PART 1
+=========================================== -->
+
+<div class="container">
+
+<h1>
+
+<i class="fa-solid fa-truck-medical"></i>
+
+Ambulance Management
+
+</h1>
+
+<p>
+
+Manage hospital ambulances, drivers, vehicle information and availability efficiently.
+
+</p>
+<!-- ===========================================
+ADD AMBULANCE FORM
+PHASE 1 - PART 2
+=========================================== -->
+
+<div class="ambulance-form">
+
+    <h2>
+
+        <i class="fa-solid fa-plus-circle"></i>
+
+        Add New Ambulance
+
+    </h2>
+
+    <form id="ambulanceForm">
+
+        <div class="form-group">
+
+            <label>Ambulance ID</label>
+
+            <input
+                type="text"
+                id="ambulanceId"
+                placeholder="Enter Ambulance ID"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Vehicle Number</label>
+
+            <input
+                type="text"
+                id="vehicleNumber"
+                placeholder="Enter Vehicle Number"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Driver Name</label>
+
+            <input
+                type="text"
+                id="driverName"
+                placeholder="Enter Driver Name"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Driver Contact</label>
+
+            <input
+                type="tel"
+                id="driverContact"
+                placeholder="Enter Driver Contact"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Current Location</label>
+
+            <input
+                type="text"
+                id="currentLocation"
+                placeholder="Enter Current Location"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Status</label>
+
+            <select id="status" required>
+
+                <option value="">Select Status</option>
+
+                <option>Available</option>
+
+                <option>On Duty</option>
+
+                <option>Maintenance</option>
+
+            </select>
+
+        </div>
+
+        <button
+            type="submit"
+            id="addAmbulanceBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add Ambulance
+
+        </button>
+
+    </form>
+
+</div>
+<!-- ===========================================
+SEARCH AMBULANCE
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchAmbulance"
+        placeholder="🔍 Search Ambulance">
+
+</div>
+
+<!-- ===========================================
+AMBULANCE TABLE
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="table-container">
+
+    <h2>
+
+        <i class="fa-solid fa-table"></i>
+
+        Ambulance List
+
+    </h2>
+
+    <table id="ambulanceTable">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Ambulance ID</th>
+
+                <th>Vehicle Number</th>
+
+                <th>Driver Name</th>
+
+                <th>Driver Contact</th>
+
+                <th>Current Location</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <!-- JavaScript will load ambulance records here -->
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- ===========================================
+JAVASCRIPT
+=========================================== -->
+
+</div>
+
+<script src="js/ambulance-management.js"></script>
+
+</body>
+
+</html>

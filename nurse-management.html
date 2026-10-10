@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Nurse Management</title>
+
+<link rel="stylesheet"
+href="css/nurse-management.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================================
+HEALTHCARE HOSPITAL
+NURSE MANAGEMENT
+PHASE 1 - PART 1
+=========================================== -->
+
+<div class="container">
+
+<h1>
+
+<i class="fa-solid fa-user-nurse"></i>
+
+Nurse Management
+
+</h1>
+
+<p>
+
+Manage hospital nurses, shifts and department assignments efficiently.
+
+</p>
+<!-- ===========================================
+ADD NURSE FORM
+PHASE 1 - PART 2
+=========================================== -->
+
+<div class="nurse-form">
+
+    <h2>
+
+        <i class="fa-solid fa-plus-circle"></i>
+
+        Add New Nurse
+
+    </h2>
+
+    <form id="nurseForm">
+
+        <div class="form-group">
+
+            <label>Nurse ID</label>
+
+            <input
+                type="text"
+                id="nurseId"
+                placeholder="Enter Nurse ID"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Nurse Name</label>
+
+            <input
+                type="text"
+                id="nurseName"
+                placeholder="Enter Nurse Name"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Department</label>
+
+            <select id="department" required>
+
+                <option value="">Select Department</option>
+
+                <option>Cardiology</option>
+
+                <option>Neurology</option>
+
+                <option>Orthopedics</option>
+
+                <option>Pediatrics</option>
+
+                <option>Emergency</option>
+
+                <option>ICU</option>
+
+                <option>General Ward</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Shift</label>
+
+            <select id="shift" required>
+
+                <option value="">Select Shift</option>
+
+                <option>Morning</option>
+
+                <option>Evening</option>
+
+                <option>Night</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter Phone Number"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Email Address</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Email Address"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Salary (Rs.)</label>
+
+            <input
+                type="number"
+                id="salary"
+                placeholder="Enter Salary"
+                required>
+
+        </div>
+
+        <button
+            type="submit"
+            id="addNurseBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add Nurse
+
+        </button>
+
+    </form>
+
+</div>
+<!-- ===========================================
+SEARCH NURSE
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchNurse"
+        placeholder="🔍 Search Nurse">
+
+</div>
+
+<!-- ===========================================
+NURSE TABLE
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="table-container">
+
+    <h2>
+
+        <i class="fa-solid fa-table"></i>
+
+        Nurse List
+
+    </h2>
+
+    <table id="nurseTable">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Nurse ID</th>
+
+                <th>Name</th>
+
+                <th>Department</th>
+
+                <th>Shift</th>
+
+                <th>Phone</th>
+
+                <th>Email</th>
+
+                <th>Salary</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <!-- JavaScript will load nurses here -->
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- ===========================================
+JAVASCRIPT
+=========================================== -->
+
+</div>
+
+<script src="js/nurse-management.js"></script>
+
+</body>
+
+</html>

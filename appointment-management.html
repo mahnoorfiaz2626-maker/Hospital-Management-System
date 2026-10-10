@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Appointment Management</title>
+
+<link rel="stylesheet"
+href="css/appointment-management.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================================
+HEALTHCARE HOSPITAL
+APPOINTMENT MANAGEMENT
+PHASE 1 - PART 1
+=========================================== -->
+
+<div class="container">
+
+<h1>
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Appointment Management
+
+</h1>
+
+<p>
+
+Manage hospital appointments quickly and efficiently.
+
+</p>
+<!-- ===========================================
+ADD APPOINTMENT FORM
+PHASE 1 - PART 2
+=========================================== -->
+
+<div class="appointment-form">
+
+    <h2>
+
+        <i class="fa-solid fa-plus-circle"></i>
+
+        Add New Appointment
+
+    </h2>
+
+    <form id="appointmentForm">
+
+        <div class="form-group">
+
+            <label>Patient Name</label>
+
+            <input
+                type="text"
+                id="patientName"
+                placeholder="Enter Patient Name"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Doctor Name</label>
+
+            <input
+                type="text"
+                id="doctorName"
+                placeholder="Enter Doctor Name"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Department</label>
+
+            <select id="department" required>
+
+                <option value="">Select Department</option>
+
+                <option>Cardiology</option>
+
+                <option>Neurology</option>
+
+                <option>Pediatrics</option>
+
+                <option>Orthopedic</option>
+
+                <option>Dental</option>
+
+                <option>Ophthalmology</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Appointment Date</label>
+
+            <input
+                type="date"
+                id="appointmentDate"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Appointment Time</label>
+
+            <input
+                type="time"
+                id="appointmentTime"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Status</label>
+
+            <select id="status" required>
+
+                <option value="">Select Status</option>
+
+                <option>Pending</option>
+
+                <option>Confirmed</option>
+
+                <option>Completed</option>
+
+                <option>Cancelled</option>
+
+            </select>
+
+        </div>
+
+        <button
+            type="submit"
+            id="addAppointmentBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add Appointment
+
+        </button>
+
+    </form>
+
+</div>
+<!-- ===========================================
+SEARCH APPOINTMENT
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchAppointment"
+        placeholder="🔍 Search Appointment">
+
+</div>
+
+<!-- ===========================================
+APPOINTMENT TABLE
+PHASE 1 - PART 3
+=========================================== -->
+
+<div class="table-container">
+
+    <h2>
+
+        <i class="fa-solid fa-table"></i>
+
+        Appointment List
+
+    </h2>
+
+    <table id="appointmentTable">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Patient</th>
+
+                <th>Doctor</th>
+
+                <th>Department</th>
+
+                <th>Date</th>
+
+                <th>Time</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <!-- JavaScript will load appointments here -->
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- ===========================================
+JAVASCRIPT
+=========================================== -->
+
+</div>
+
+<script src="js/appointment-management.js"></script>
+
+</body>
+
+</html>

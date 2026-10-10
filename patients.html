@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patients Management</title>
+
+    <link rel="stylesheet" href="css/patients.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+        SIDEBAR
+========================= -->
+
+<div class="sidebar">
+
+    <div class="profile">
+
+        <img src="images/logo.png" alt="Logo">
+
+        <h2>HealthCare</h2>
+
+    </div>
+
+    <ul>
+
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+        <li><a href="doctors.html">👩‍⚕️ Doctors</a></li>
+
+        <li><a href="patients.html" class="active">🧑 Patients</a></li>
+
+        <li><a href="appointments.html">📅 Appointments</a></li>
+
+        <li><a href="departments.html">🏥 Departments</a></li>
+
+        <li><a href="medicines.html">💊 Medicines</a></li>
+
+        <li><a href="settings.html">⚙ Settings</a></li>
+
+        <li><a href="login.html">🚪 Logout</a></li>
+
+    </ul>
+
+</div>
+
+<!-- =========================
+        MAIN CONTENT
+========================= -->
+
+<div class="main">
+
+<header>
+
+    <h1>Patients Management</h1>
+
+</header>
+
+<!-- Search -->
+
+<div class="top-bar">
+
+<input type="text" placeholder="🔍 Search Patient...">
+
+<button>Add New Patient</button>
+
+</div>
+
+<!-- Table -->
+
+<div class="table-box">
+
+<h2>Patient Records</h2>
+
+<table>
+
+<tr>
+
+<th>ID</th>
+
+<th>Patient Name</th>
+
+<th>Age</th>
+
+<th>Gender</th>
+
+<th>Doctor</th>
+
+<th>Disease</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>P001</td>
+
+<td>Ali Khan</td>
+
+<td>35</td>
+
+<td>Male</td>
+
+<td>Dr. Aleeza</td>
+
+<td>Heart Disease</td>
+
+<td>Admitted</td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>P002</td>
+
+<td>Sara Ahmed</td>
+
+<td>28</td>
+
+<td>Female</td>
+
+<td>Dr. Tehreem</td>
+
+<td>Migraine</td>
+
+<td>Recovered</td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>P003</td>
+
+<td>Mahnoor Fiaz</td>
+
+<td>22</td>
+
+<td>Female</td>
+
+<td>Dr. Mahnoor</td>
+
+<td>General Checkup</td>
+
+<td>Completed</td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+<tr>
+
+    <td>P004</td>
+
+    <td>Ahmed Raza</td>
+
+    <td>40</td>
+
+    <td>Male</td>
+
+    <td>Dr. Aleeza</td>
+
+    <td>Blood Pressure</td>
+
+    <td>Under Treatment</td>
+
+    <td>
+
+        <button class="edit">Edit</button>
+
+        <button class="delete">Delete</button>
+
+    </td>
+
+</tr>
+
+<tr>
+
+    <td>P005</td>
+
+    <td>Ayesha Noor</td>
+
+    <td>31</td>
+
+    <td>Female</td>
+
+    <td>Dr. Tehreem</td>
+
+    <td>Brain Tumor</td>
+
+    <td>Admitted</td>
+
+    <td>
+
+        <button class="edit">Edit</button>
+
+        <button class="delete">Delete</button>
+
+    </td>
+
+</tr>
+
+<tr>
+
+    <td>P006</td>
+
+    <td>Hassan Ali</td>
+
+    <td>27</td>
+
+    <td>Male</td>
+
+    <td>Dr. Mahnoor Fiaz</td>
+
+    <td>Fever</td>
+
+    <td>Recovered</td>
+
+    <td>
+
+        <button class="edit">Edit</button>
+
+        <button class="delete">Delete</button>
+
+    </td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

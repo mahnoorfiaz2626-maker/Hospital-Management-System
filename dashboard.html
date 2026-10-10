@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hospital Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- =======================================
+SIDEBAR
+======================================= -->
+
+<div class="sidebar">
+
+<div class="profile">
+
+<img src="images/logo.png" alt="Hospital Logo">
+
+<h2>HealthCare</h2>
+
+</div>
+
+<ul>
+
+<li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+<li><a href="doctor-management.html">👨‍⚕️ Doctor Management</a></li>
+
+<li><a href="patient-management.html">🧑 Patient Management</a></li>
+
+<li><a href="appointment-management.html">📅 Appointment Management</a></li>
+
+<li><a href="department-management.html">🏥 Department Management</a></li>
+
+<li><a href="medicine-management.html">💊 Medicine Management</a></li>
+
+<li><a href="laboratory-management.html">🧪 Laboratory Management</a></li>
+
+<li><a href="billing-management.html">💰 Billing Management</a></li>
+
+<li><a href="room-management.html">🛏 Room Management</a></li>
+
+<li><a href="nurse-management.html">👩‍⚕️ Nurse Management</a></li>
+
+<li><a href="staff-management.html">👨‍💼 Staff Management</a></li>
+
+<li><a href="attendance-management.html">📋 Attendance Management</a></li>
+
+<li><a href="ambulance-management.html">🚑 Ambulance Management</a></li>
+
+<li><a href="blood-bank-management.html">🩸 Blood Bank Management</a></li>
+
+<li><a href="payroll-management.html">💵 Payroll Management</a></li>
+
+<li><a href="inventory-management.html">📦 Inventory Management</a></li>
+
+<li><a href="reports-analytics.html">📊 Reports & Analytics</a></li>
+
+<li><a href="user-management.html">👥 User / Admin Management</a></li>
+
+<li><a href="settings.html">⚙ Settings</a></li>
+
+<li><a href="login.html">🚪 Logout</a></li>
+
+</ul>
+
+</div>
+
+<!-- =======================================
+MAIN CONTENT
+======================================= -->
+
+<div class="main">
+
+<header>
+
+<h1>Hospital Dashboard</h1>
+
+<p>Welcome, Mahnoor 👋</p>
+
+</header>
+<!-- =======================================
+DASHBOARD CARDS
+======================================= -->
+
+<section class="dashboard">
+
+<div class="card">
+
+<h3>Total Doctors</h3>
+
+<h1 id="totalDoctors">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Total Patients</h3>
+
+<h1 id="totalPatients">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Total Appointments</h3>
+
+<h1 id="totalAppointments">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Total Departments</h3>
+
+<h1 id="totalDepartments">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Total Medicines</h3>
+
+<h1 id="totalMedicines">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Total Laboratory Tests</h3>
+
+<h1 id="totalLaboratory">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Total Nurses</h3>
+
+<h1 id="totalNurses">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Total Staff</h3>
+
+<h1 id="totalStaff">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Total Rooms</h3>
+
+<h1 id="totalRooms">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Blood Bank Records</h3>
+
+<h1 id="totalBloodRecords">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Inventory Items</h3>
+
+<h1 id="totalInventoryItems">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Total Users</h3>
+
+<h1 id="totalUsers">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Total Revenue</h3>
+
+<h1 id="totalRevenue">PKR 0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Attendance Records</h3>
+
+<h1 id="totalAttendance">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Ambulances</h3>
+
+<h1 id="totalAmbulances">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Payroll Records</h3>
+
+<h1 id="totalPayroll">0</h1>
+
+</div>
+
+</section>
+<!-- =======================================
+PATIENT RECORDS
+======================================= -->
+
+<section class="patient-records">
+
+<h2>Patient Records</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Patient Name</th>
+
+<th>Doctor</th>
+
+<th>Disease</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="patientTableBody">
+
+<tr>
+
+<td>001</td>
+
+<td>Ali Khan</td>
+
+<td>Dr. Aleeza</td>
+
+<td>Heart Disease</td>
+
+<td>Admitted</td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>002</td>
+
+<td>Sara Ahmed</td>
+
+<td>Dr. Tehreem</td>
+
+<td>Migraine</td>
+
+<td>Recovered</td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>003</td>
+
+<td>Mahnoor Fiaz</td>
+
+<td>Dr. Mahnoor</td>
+
+<td>General Checkup</td>
+
+<td>Completed</td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<!-- =======================================
+RECENT APPOINTMENTS
+======================================= -->
+
+<section class="recent-appointments">
+
+<h2>Recent Appointments</h2>
+
+<table id="recentAppointmentsTable">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Patient</th>
+
+<th>Doctor</th>
+
+<th>Date</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<!-- JavaScript will load recent appointments -->
+
+</tbody>
+
+</table>
+
+</section>
+<!-- =======================================
+APPOINTMENTS ANALYTICS BAR CHART
+======================================= -->
+
+<section class="chart-card">
+
+<h2>Appointments Analytics</h2>
+
+<canvas id="appointmentChart"></canvas>
+
+</section>
+
+<!-- =======================================
+APPOINTMENT STATUS PIE CHART
+======================================= -->
+
+<section class="chart-card">
+
+<h2>Appointment Status Overview</h2>
+
+<canvas id="statusPieChart"></canvas>
+
+</section>
+
+<!-- =======================================
+MONTHLY APPOINTMENT REPORT
+======================================= -->
+
+<section class="monthly-report">
+
+<h2>Monthly Appointment Report</h2>
+
+<div class="report-cards">
+
+<div class="report-box">
+
+<h3>This Month</h3>
+
+<h1 id="monthAppointments">0</h1>
+
+</div>
+
+<div class="report-box">
+
+<h3>Today's Appointments</h3>
+
+<h1 id="todayAppointments">0</h1>
+
+</div>
+
+<div class="report-box">
+
+<h3>Upcoming</h3>
+
+<h1 id="upcomingAppointments">0</h1>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- =======================================
+JAVASCRIPT
+======================================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
